@@ -1,15 +1,15 @@
 {
-  "name": "coinpunk",
-  "description": "DIY Bitcoin Wallet Service",
-  "version": "0.2.1",
+  "name": "vertpunk",
+  "description": "DIY Vertcoin Wallet Service",
+  "version": "0.2.2",
   "directories": {
     "lib": "./lib"
   },
   "main": "app.js",
-  "author": "Kyle Drake <kyledrake@gmail.com>",
+  "author": "James Lovejoy <jameslovejoy1@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kyledrake/coinpunk.git"
+    "url": "https://github.com/vertcoin/vertpunk.git"
   },
   "dependencies": {
     "express": "~3.4.4",
