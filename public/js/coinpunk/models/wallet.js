@@ -26,7 +26,7 @@ coinpunk.Wallet = function(walletKey, walletId) {
     return true;
   };
 
-  this.mergePayload = function(wallet) {
+  this.mergePayload = function(wallet, payloadHash) {
     var payloadJSON = sjcl.decrypt(this.walletKey, wallet);
     var payload = JSON.parse(payloadJSON);
 
@@ -42,7 +42,8 @@ coinpunk.Wallet = function(walletKey, walletId) {
       return item.hash;
     });
 
-    this.payloadHash  = this.computePayloadHash(payloadJSON);
+    this.payloadHash = payloadHash;
+    this.encryptPayload(); //newPayloadHash
 
     return true;
   };

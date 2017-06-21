@@ -54,7 +54,7 @@ coinpunk.Controller.prototype.saveWallet = function(data, callback) {
     dataType: 'json',
     success: function(response) {
       if(response.result == 'outOfSync') {
-        coinpunk.wallet.mergePayload(response.wallet);
+        coinpunk.wallet.mergePayload(response.wallet, response.payloadHash);
         return self.saveWallet({override: true}, callback);
       }
 
