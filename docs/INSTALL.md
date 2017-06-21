@@ -49,22 +49,6 @@ Restart redis: `sudo service redis-server restart`.
 
 ## Install and Configure vertcoind
 
-Currently Vertpunk depends on a custom build of vertcoind using [this patch](https://github.com/dayreiner/vertcoin-watchonly).
-
-Install prerequisites:
-```
-sudo apt-get install libdb4.8++ libdb4.8++-dev pkg-config libprotobuf-dev \
-libminiupnpc8 minissdpd libboost-all-dev ccache libssl-dev
-```
-
-Checkout and make [vertcoin-watchonly](https://github.com/dayreiner/vertcoin-watchonly):
-```
-git clone https://github.com/dayreiner/vertcoin-watchonly.git
-cd vertcoin-watchonly/src
-make -f makefile.unix USE_UPNP=0 USE_QRCODE=1 USE_IPV6=1
-strip vertcoind
-```
-
 Create a user for vertcoind and move the binary to where it can access it:
 ```
 adduser vertcoin

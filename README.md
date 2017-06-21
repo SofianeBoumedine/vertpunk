@@ -13,8 +13,6 @@ Vertpunk is also used to power the open source web-based Vertcoin wallet service
 
 ## Get Started
 
-Vertpunk requires the [vertcoin-watchony](https://github.com/dayreiner/vertcoin-watchonly) version of vertcoind to function.
-
 See the [Install Guide](docs/INSTALL.md)
 
 ## Vertpunk is for Advanced Users
